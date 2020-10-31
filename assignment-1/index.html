@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="main-div">
+        
+        <form id="form">
+            <ul class="form-list">
+            <li>
+                <label for="source" >
+                    Select your source:
+                </label><div class="line"></div>
+                <span class="data-container">
+                <select class="data" id="source" name="source">
+                    <option>Google cloud</option>
+                    <option>Azure</option>
+                    <option>AWS</option>
+                    <option>Netlify</option>
+                </select>
+                <small>error text</small>
+            </span>
+            </li>
+
+            <li>
+            <label>
+                Provide a name for pipeline:
+            </label><div class="line" id="line"></div>
+            <span class="data-container">
+            <input class="data" name="pipeline" id="pipeline" placeholder="e.g., cust_shop_energy_gateway001" required >
+            <small>error text</small>
+            </span>
+            </li>
+
+            <li>
+            <label>
+                GCS Project name:
+            </label><div class="line"></div>
+            <span class="data-container">
+            <input  class="data" name="project" id="project" placeholder="project-id" required>
+            <small>error text</small>
+            </span>
+            </li>
+
+            <li>
+            <label>
+                GCS bucket name:
+            </label><div class="line"></div>
+            <span class="data-container">
+            <input class="data" name="bucket" id="bucket" placeholder="gs://your-bucket" required>
+        <small>error text</small>    
+            </span>
+        </li>
+
+            <li>
+            <label>
+                Input Cloud Storage File(s):
+            </label><div class="line"></div>
+            <span class="data-container">
+            <input class="data" name="storage" id="storage" placeholder="GCS location of your files" required>
+        <small>error text</small>    
+            </span>
+        </li>
+
+            <li>
+            <label>
+                GCS credentials:
+            </label><div class="line"></div>
+            <span class="data-container">
+            <input class="data" name="credentials" id="credentials" required>
+        <small>error text</small>
+            </span>    
+        </li>
+
+            <li>
+            <label>
+                Run Every:
+            </label><div class="line"></div>
+            <span class="data-container">
+            <input class="data" name="run" id="run" placeholder="(in minutes)" required>
+            <small>error text</small>
+            </span>
+                   
+            </li>
+       
+            <li>
+                <input type="submit" value="Enter" class="submit-btn"/>
+                <input type="button" value="Cancel" class="cancel-btn">
+            </li>
+        </ul>
+        </form>
+          
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
